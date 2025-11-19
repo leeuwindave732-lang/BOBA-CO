@@ -12,200 +12,339 @@ body {
   margin: 0;
 }
 
-.wk-desk-1 {
-  width: 8.333333%;
-}
-
-.wk-desk-2 {
-  width: 16.666667%;
-}
-
-.wk-desk-3 {
-  width: 25%;
-}
-
-.wk-desk-4 {
-  width: 33.333333%;
-}
-
-.wk-desk-5 {
-  width: 41.666667%;
-}
-
-.wk-desk-6 {
-  width: 50%;
-}
-
-.wk-desk-7 {
-  width: 58.333333%;
-}
-
-.wk-desk-8 {
-  width: 66.666667%;
-}
-
-.wk-desk-9 {
-  width: 75%;
-}
-
-.wk-desk-10 {
-  width: 83.333333%;
-}
-
-.wk-desk-11 {
-  width: 91.666667%;
-}
-
-.wk-desk-12 {
-  width: 100%;
-}
+/* Custom Grid Classes */
+.wk-desk-1 { width: 8.333333%; }
+.wk-desk-2 { width: 16.666667%; }
+.wk-desk-3 { width: 25%; }
+.wk-desk-4 { width: 33.333333%; }
+.wk-desk-5 { width: 41.666667%; }
+.wk-desk-6 { width: 50%; }
+.wk-desk-7 { width: 58.333333%; }
+.wk-desk-8 { width: 66.666667%; }
+.wk-desk-9 { width: 75%; }
+.wk-desk-10 { width: 83.333333%; }
+.wk-desk-11 { width: 91.666667%; }
+.wk-desk-12 { width: 100%; }
 
 @media (max-width: 1024px) {
-  .wk-ipadp-1 {
-    width: 8.333333%;
-  }
-
-  .wk-ipadp-2 {
-    width: 16.666667%;
-  }
-
-  .wk-ipadp-3 {
-    width: 25%;
-  }
-
-  .wk-ipadp-4 {
-    width: 33.333333%;
-  }
-
-  .wk-ipadp-5 {
-    width: 41.666667%;
-  }
-
-  .wk-ipadp-6 {
-    width: 50%;
-  }
-
-  .wk-ipadp-7 {
-    width: 58.333333%;
-  }
-
-  .wk-ipadp-8 {
-    width: 66.666667%;
-  }
-
-  .wk-ipadp-9 {
-    width: 75%;
-  }
-
-  .wk-ipadp-10 {
-    width: 83.333333%;
-  }
-
-  .wk-ipadp-11 {
-    width: 91.666667%;
-  }
-
-  .wk-ipadp-12 {
-    width: 100%;
-  }
+  .wk-ipadp-1 { width: 8.333333%; }
+  .wk-ipadp-2 { width: 16.666667%; }
+  .wk-ipadp-3 { width: 25%; }
+  .wk-ipadp-4 { width: 33.333333%; }
+  .wk-ipadp-5 { width: 41.666667%; }
+  .wk-ipadp-6 { width: 50%; }
+  .wk-ipadp-7 { width: 58.333333%; }
+  .wk-ipadp-8 { width: 66.666667%; }
+  .wk-ipadp-9 { width: 75%; }
+  .wk-ipadp-10 { width: 83.333333%; }
+  .wk-ipadp-11 { width: 91.666667%; }
+  .wk-ipadp-12 { width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .wk-tab-1 {
-    width: 8.333333%;
-  }
-
-  .wk-tab-2 {
-    width: 16.666667%;
-  }
-
-  .wk-tab-3 {
-    width: 25%;
-  }
-
-  .wk-tab-4 {
-    width: 33.333333%;
-  }
-
-  .wk-tab-5 {
-    width: 41.666667%;
-  }
-
-  .wk-tab-6 {
-    width: 50%;
-  }
-
-  .wk-tab-7 {
-    width: 58.333333%;
-  }
-
-  .wk-tab-8 {
-    width: 66.666667%;
-  }
-
-  .wk-tab-9 {
-    width: 75%;
-  }
-
-  .wk-tab-10 {
-    width: 83.333333%;
-  }
-
-  .wk-tab-11 {
-    width: 91.666667%;
-  }
-
-  .wk-tab-12 {
-    width: 100%;
-  }
+  .wk-tab-1 { width: 8.333333%; }
+  .wk-tab-2 { width: 16.666667%; }
+  .wk-tab-3 { width: 25%; }
+  .wk-tab-4 { width: 33.333333%; }
+  .wk-tab-5 { width: 41.666667%; }
+  .wk-tab-6 { width: 50%; }
+  .wk-tab-7 { width: 58.333333%; }
+  .wk-tab-8 { width: 66.666667%; }
+  .wk-tab-9 { width: 75%; }
+  .wk-tab-10 { width: 83.333333%; }
+  .wk-tab-11 { width: 91.666667%; }
+  .wk-tab-12 { width: 100%; }
 }
 
 @media (max-width: 500px) {
-  .wk-mobile-1 {
-    width: 8.333333%;
+  .wk-mobile-1 { width: 8.333333%; }
+  .wk-mobile-2 { width: 16.666667%; }
+  .wk-mobile-3 { width: 25%; }
+  .wk-mobile-4 { width: 33.333333%; }
+  .wk-mobile-5 { width: 41.666667%; }
+  .wk-mobile-6 { width: 50%; }
+  .wk-mobile-7 { width: 58.333333%; }
+  .wk-mobile-8 { width: 66.666667%; }
+  .wk-mobile-9 { width: 75%; }
+  .wk-mobile-10 { width: 83.333333%; }
+  .wk-mobile-11 { width: 91.666667%; }
+  .wk-mobile-12 { width: 100%; }
+}
+
+/* Tablet Responsive Adjustments (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
   }
 
-  .wk-mobile-2 {
-    width: 16.666667%;
+  /* Navbar adjustments */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .wk-mobile-3 {
-    width: 25%;
+  .navbar-brand {
+    font-size: 1.8rem;
   }
 
-  .wk-mobile-4 {
-    width: 33.333333%;
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    margin: 0 8px;
   }
 
-  .wk-mobile-5 {
-    width: 41.666667%;
+  /* Page header */
+  .page-header h1 {
+    font-size: 3rem;
   }
 
-  .wk-mobile-6 {
-    width: 50%;
+  /* About section */
+  #about-us .row {
+    flex-direction: column;
   }
 
-  .wk-mobile-7 {
-    width: 58.333333%;
+  #about-us .col-lg-4 {
+    margin-bottom: 2rem;
   }
 
-  .wk-mobile-8 {
-    width: 66.666667%;
+  /* Menu section */
+  .bd-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
-  .wk-mobile-9 {
-    width: 75%;
+  /* Reservation and Contact */
+  .reservation-form,
+  .contact-form {
+    margin-bottom: 2rem;
   }
 
-  .wk-mobile-10 {
-    width: 83.333333%;
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
   }
 
-  .wk-mobile-11 {
-    width: 91.666667%;
+  /* Footer */
+  .footer .row > div {
+    margin-bottom: 2rem;
   }
 
-  .wk-mobile-12 {
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Dropdown menu responsiveness for collapsed navbar (tablet and mobile) */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    position: static;
+    float: none;
     width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown-item {
+    text-align: center;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Mobile Responsive Adjustments (< 768px) */
+@media (max-width: 768px) {
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Dropdown menu responsiveness */
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown-item {
+    text-align: center;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Page header */
+  .page-header {
+    min-height: 300px;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-header .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* About section */
+  #about-us .row {
+    flex-direction: column;
+  }
+
+  #about-us .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+
+  #about-us h1 {
+    font-size: 2rem;
+  }
+
+  /* Menu section */
+  .bd-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Reservation section */
+  .reservation-form,
+  .contact-form {
+    margin-bottom: 2rem;
+  }
+
+  .reservation-info,
+  .contact-info {
+    text-align: center;
+  }
+
+  /* Testimonial */
+  .testimonial-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  /* Footer */
+  .footer .row > div {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footer .d-flex {
+    justify-content: center;
+  }
+
+  .footer .input-group {
+    flex-direction: column;
+  }
+
+  .footer .input-group .form-control {
+    margin-bottom: 1rem;
+  }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Small Mobile (< 480px) */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  /* Page header */
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  /* Section titles */
+  .section-title h1 {
+    font-size: 1.8rem;
+  }
+
+  /* About */
+  #about-us h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Menu */
+  .card__precis {
+    font-size: 0.85rem;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 95%;
+    margin: 5% auto;
+    padding: 15px;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
   }
 }

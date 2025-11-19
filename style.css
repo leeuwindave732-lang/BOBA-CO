@@ -8,7 +8,7 @@ body {
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('img/bg.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   scroll-behavior: smooth;
 }
 
@@ -54,10 +54,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-out;
 }
 
 /* Navbar Styles */
@@ -235,7 +231,7 @@ body {
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url('img/footer.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
 }
 
@@ -385,6 +381,18 @@ body {
     height: 45px;
     font-size: 1rem;
   }
+
+  /* Ensure touch-friendly buttons */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Fix modal on mobile */
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -402,6 +410,23 @@ body {
 
   #about-us h1 {
     font-size: 1.8rem;
+  }
+
+  /* Touch-friendly elements */
+  .btn {
+    min-height: 48px;
+    font-size: 1rem;
+  }
+
+  .form-control {
+    min-height: 44px;
+    font-size: 1rem;
+  }
+
+  /* Gallery modal adjustments */
+  .modal-content img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1241,10 +1266,14 @@ a:hover:after {
   transform: translateZ(0);
 }
 
-/* Stagger Animation for Menu Cards */
+/* Optimized Stagger Animation for Menu Cards */
 .card.animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+.card {
+  will-change: transform, opacity;
 }
 
 /* Tooltip Styles */

@@ -34,6 +34,8 @@
                 });
             } else {
                 $('.navbar .dropdown').off('mouseover').off('mouseout');
+                // Ensure dropdown is always visible on mobile/tablet
+                $('.dropdown-menu').show();
             }
         }
         toggleNavbarMethod();
@@ -41,12 +43,22 @@
     });
 
 
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+    // Optimized back to top button
+    let backToTopTicking = false;
+
+    function updateBackToTop() {
+        if ($(window).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
+        }
+        backToTopTicking = false;
+    }
+
+    $(window).scroll(function () {
+        if (!backToTopTicking) {
+            requestAnimationFrame(updateBackToTop);
+            backToTopTicking = true;
         }
     });
     $('.back-to-top').click(function () {
@@ -54,15 +66,17 @@
         return false;
     });
 
-    // Navbar toggle functionality
-    $('.navbar-toggler').click(function () {
-        $('#navbarCollapse').toggleClass('show');
-    });
-
-    // Close navbar on link click for mobile
-    $('.navbar-nav .nav-link').click(function () {
+    // Close navbar on link click for mobile, but not on dropdown-toggle
+    $('.navbar-nav .nav-link:not(.dropdown-toggle), .navbar-nav .dropdown-item').click(function () {
         if ($(window).width() < 992) {
             $('#navbarCollapse').removeClass('show');
+        }
+    });
+
+    // Prevent navbar from closing when clicking dropdown-toggle on mobile/tablet
+    $('.navbar-nav .dropdown-toggle').click(function (e) {
+        if ($(window).width() < 992) {
+            e.preventDefault();
         }
     });
 
@@ -175,19 +189,29 @@ menuCards.forEach(card => {
   staggerObserver.observe(card);
 });
 
-// Parallax effect for hero section
+// Optimized parallax effect for hero section (disabled on mobile for performance)
 const heroSection = document.querySelector('.page-header');
-let lastScrollY = window.scrollY;
+let parallaxTicking = false;
 
-window.addEventListener('scroll', () => {
+function updateParallax() {
   const currentScrollY = window.scrollY;
-  lastScrollY = currentScrollY;
 
-  if (heroSection) {
+  // Disable parallax on mobile devices
+  if (window.innerWidth > 768 && heroSection) {
     const parallaxSpeed = 0.5;
     const translateY = currentScrollY * parallaxSpeed;
     heroSection.style.transform = `translateY(${translateY}px)`;
+  } else if (heroSection) {
+    heroSection.style.transform = 'translateY(0)';
   }
-});
+  parallaxTicking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!parallaxTicking) {
+    requestAnimationFrame(updateParallax);
+    parallaxTicking = true;
+  }
+}, { passive: true });
 
 })(jQuery);
